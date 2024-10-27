@@ -13,7 +13,13 @@ Este proyecto utiliza **Python** y la biblioteca **Playwright** para extraer dat
 
 ### Configuración del Entorno
 
-1. **Clona el repositorio**:
+1. **Instalacion de python y dependencias**:
+   Asegurece de tener Python 3.7+ instalado.
+   Instala las dependencias enumeradas en requirements.txt
    ```bash
-   git clone <URL_del_repositorio>
-   cd <nombre_del_repositorio>
+  pip install -r requirements.txt
+  
+Instala la ultima version de **Playwright** y sus navegadores:
+   ```bash
+  pip install playwright
+   playwright install```
