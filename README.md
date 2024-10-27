@@ -64,5 +64,8 @@ Se implemento un tiempo de espera despues de cada scroll para permitir que la pa
 - **Bloqueo de IP**: Realizar multiples solicitudes en un corto periodo puede resultar en un bloqueo temporal de la IP. 
 **Solución:** Para mitigar esto, el navegador se ejecuta en modo visual (headless=False) y se aplican pausas (time.sleep) para simular un comportamiento humano.
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> d6e53db (nuevos cambios)
