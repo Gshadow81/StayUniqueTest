@@ -105,39 +105,34 @@ Se cargan los archivos `Properties.csv` y `Bookings.csv`.
 ### 3. Limpieza y Transformación de Datos
 
 #### Properties
-
 - Se convierte la columna `ReadyDate` a tipo `datetime`.
 - Se reemplazan los valores nulos en `PropertyType` con 'Unknown'.
-
 
 #### Bookings
 
 - Se convierten las columnas de fecha a tipo `datetime`.
 - Se manejan los valores nulos en columnas importantes.
 
-
 ### 4. Análisis Exploratorio de Datos (EDA)
 
-Se muestran estadísticas descriptivas para ambos conjuntos de datos:
-
+Se muestran estadísticas descriptivas para ambos conjuntos de datos
 
 ### 5. Unificación de los Datasets
 
-Los datasets se fusionan utilizando `PropertyId` como clave:
-
+Los datasets se fusionan utilizando `PropertyId` como clave
 
 ### 6. Verificación de Valores Nulos
 
-Se revisan los valores nulos en el dataset unificado:
-
-
+Se revisan los valores nulos en el dataset unificado
 
 ### 7. Rellenar Valores Nulos Remanentes
 
-Se rellenan los valores nulos restantes después de la fusión:
-
+Se rellenan los valores nulos restantes después de la fusión
 
 ### 8. Guardar el Dataset Unificado
 
-Finalmente, se guarda el dataset unificado en un archivo CSV:
+Finalmente, se guarda el dataset unificado en un archivo CSV
 
+## Analisis del dataset merged_properties_bookings
+En este pequeño analisis podemos encontrar las siguientes concluciones:
+-en la categoria de reservas podemos encontrar 4 tipos de propiedas que se repiten las cuales son unknow, house, apartment y Apa, debido a mi falta de conocimiento en el area de hoteleria asumire que Apa hace referencia a Apartment debido a que hay ingreso de datos de diferentes paginas de hoteleria asi que el nombramiento de la data puede variar entre estas, ya mencionado esto renombramos Apa a apartment para poder visualizar graficamente cual es el tipo de propiedad que se renta con mas frencuencia tambien dandonos a entender que la data debe pasar por una mayor capa de limpieza individual por columna, lo cual originalmente no fue previsto debido a que post merged terminaron resultando 24 columnas esto no solo se presentara en este columnas tambien a la hora de hacer calculos sobre pricing cuando busquemos los menos precios tendremos precios muy bajos cercanos a 0
