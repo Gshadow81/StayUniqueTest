@@ -1,5 +1,5 @@
 # StayUniqueTest
-## Scrapeing de Hoteles en Booking.com
+## Scraping de Hoteles en Booking.com
 
 Este proyecto es un scraper que utiliza Playwright para extraer informacion de hoteles en Booking.com y almacenar los datos en un archivo CSV.
 
@@ -16,7 +16,9 @@ Para configurar el entorno, sigue estos pasos:
 
 1. **Instala Python**: Asegurate de tener Python 3.7 o superior instalado en tu maquina. Puedes descargarlo desde [python.org](https://www.python.org/downloads/).
 
-2. **Instala las dependencias**: Usa `pip` para instalar las bibliotecas necesarias.
+2. **Instala las dependencias**: Usa `pip` para instalar las bibliotecas necesarias
+     `pip install playwright pandas`
+     `playwright install`
 
 3. **Instala los navegadores necesarios**: Ejecuta el comando correspondiente para instalar los navegadores requeridos por Playwright.
 
@@ -26,7 +28,7 @@ Para ejecutar el script de scraping, sigue estos pasos:
 
 1. Asegurate de que el entorno este activado y las dependencias instaladas.
 
-2. Guarda el script en un archivo llamado `scraper.py`.
+2. Guarda el script en un archivo llamado `barcelona_scraping.py`.
 
 3. Ejecuta el script desde la linea de comandos.
 
