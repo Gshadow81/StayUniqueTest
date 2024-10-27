@@ -66,8 +66,78 @@ Se implemento un tiempo de espera despues de cada scroll para permitir que la pa
 - **Bloqueo de IP**: Realizar multiples solicitudes en un corto periodo puede resultar en un bloqueo temporal de la IP. 
 **Solución:** Para mitigar esto, el navegador se ejecuta en modo visual (headless=False) y se aplican pausas (time.sleep) para simular un comportamiento humano.
 
-<<<<<<< HEAD
+  
+# Análisis de Datos de Propertys y Bookings
+
+Este proyecto realiza un análisis de datos utilizando dos conjuntos de datos: `Properties.csv` y `Bookings.csv`. El código carga, limpia, transforma y une estos datos, proporcionando un archivo CSV final listo para análisis.
+
+## Requisitos
+
+Asegúrate de tener las siguientes librerías instaladas:
+
+- `pandas`
+
+Puedes instalar `pandas` usando pip:
+
+```bash
+pip install pandas
+```
+
+## Archivos Necesarios
+
+- `dataset/Properties.csv`
+- `dataset/Bookings.csv`
+
+Asegúrate de que los archivos estén en la ruta correcta antes de ejecutar el código.
+
+## Descripción del Código
+
+### 1. Importar Librerías
+
+```python
+import pandas as pd
+```
+
+### 2. Cargar los Datos
+
+Se cargan los archivos `Properties.csv` y `Bookings.csv`.
+
+### 3. Limpieza y Transformación de Datos
+
+#### Properties
+
+- Se convierte la columna `ReadyDate` a tipo `datetime`.
+- Se reemplazan los valores nulos en `PropertyType` con 'Unknown'.
 
 
-=======
->>>>>>> d6e53db (nuevos cambios)
+#### Bookings
+
+- Se convierten las columnas de fecha a tipo `datetime`.
+- Se manejan los valores nulos en columnas importantes.
+
+
+### 4. Análisis Exploratorio de Datos (EDA)
+
+Se muestran estadísticas descriptivas para ambos conjuntos de datos:
+
+
+### 5. Unificación de los Datasets
+
+Los datasets se fusionan utilizando `PropertyId` como clave:
+
+
+### 6. Verificación de Valores Nulos
+
+Se revisan los valores nulos en el dataset unificado:
+
+
+
+### 7. Rellenar Valores Nulos Remanentes
+
+Se rellenan los valores nulos restantes después de la fusión:
+
+
+### 8. Guardar el Dataset Unificado
+
+Finalmente, se guarda el dataset unificado en un archivo CSV:
+
